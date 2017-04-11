@@ -20,6 +20,8 @@ The latest source code release for LibXtract can be downloaded from [https://git
 
 To build the SWIG bindings [SWIG]() is required. For the Python bindings, a Python install is required. For the Java bindings a Java install is required.
 
+build Python2 bindings run `make swig`.
+
 ## Installation
 
 Type `make install` to build and install to `/usr/local`. Type `make install PREFIX=/somewhere/else` to install to `/somewhere/else`,

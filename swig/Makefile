@@ -21,7 +21,7 @@ python:
 	@swig -I../include -python $(NAME).i
 	@$(CC) $(CFLAGS) $(NAME)_wrap.c -o $(NAME)_wrap.o -I$(INCLUDEPY) -I../include
 #	@$(CC) $(LDFLAGS) ../src/lib$(NAME).a $(NAME)_wrap.o -o _$(NAME).so -framework Accelerate
-    @$(CC) $(LDFLAGS) -o _$(NAME).so $(NAME)_wrap.o ../src/lib$(NAME).a
+	@$(CC) $(LDFLAGS) -o _$(NAME).so $(NAME)_wrap.o ../src/lib$(NAME).a
 
 clean:
 	@$(RM) *.o
